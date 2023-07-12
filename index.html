@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>AttentionFlow: Text-to-Video Editing Using Motion Map Injection Module</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">AttentionFlow: Text-to-Video Editing Using Motion Map Injection Module</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="static/pdfs/920.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/920_supple.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://anonymous.4open.science/r/AttentionFlow-197C" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img class="center-img" src="static/prompt/label.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/images/clouds_waves_input.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/images/clouds_waves_ori.gif", width="33.3%">
+        <img class="center-img" src="static/images/clouds_waves_MMI.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/waves_re.png", width="100%">
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img class="center-img" src="static/prompt/label.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/images/bubble_duck_input.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/images/bubble_duck_ori.gif", width="33.3%">
+        <img class="center-img" src="static/images/bubble_duck_MMI.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/duck_re.png", width="100%">
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img class="center-img" src="static/prompt/label.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/images/clouds_lava_input.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/images/clouds_lava_ori.gif", width="33.3%">
+        <img class="center-img" src="static/images/clouds_lava_MMI.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/lava_re.png", width="100%">
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+       <img class="center-img" src="static/prompt/label.png", width="100%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/black_boat_input.gif", width="33.3%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/black_boat_ori.gif", width="33.3%">
+      <img class="center-img" src="static/images/black_boat_MMI.gif", width="33.3%">
+      <img class="center-img" src="static/prompt/black_boat_re.png", width="100%">
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+       <img class="center-img" src="static/prompt/label.png", width="100%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/colorful_water_input.gif", width="33.3%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/colorful_water_ori.gif", width="33.3%">
+      <img class="center-img" src="static/images/colorful_water_MMI.gif", width="33.3%">
+      <img class="center-img" src="static/prompt/colorful_re.png", width="100%">
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+       <img class="center-img" src="static/prompt/label.png", width="100%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/pink_train_input.gif", width="33.3%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/pink_train_ori.gif", width="33.3%">
+      <img class="center-img" src="static/images/pink_train_MMI.gif", width="33.3%">
+      <img class="center-img" src="static/prompt/pink_train_re.png", width="100%">
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+       <img class="center-img" src="static/prompt/label.png", width="100%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/red_car_input.gif", width="33.3%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/red_car_ori.gif", width="33.3%">
+      <img class="center-img" src="static/images/red_car_MMI.gif", width="33.3%">
+      <img class="center-img" src="static/prompt/red_car_re.png", width="100%">
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+       <img class="center-img" src="static/prompt/label.png", width="100%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/yellow_windmill_input.gif", width="33.3%", style="padding-top: 2%;">
+      <img class="center-img" src="static/images/yellow_windmill_ori.gif", width="33.3%">
+      <img class="center-img" src="static/images/yellow_windmill_MMI.gif", width="33.3%">
+      <img class="center-img" src="static/prompt/yellow_wings_re.png", width="100%">
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<br>
+<br>
+<br>
+<br>
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Our Contribution</h2>
+      </div>
+      <h2 class="subtitle">
+        Our proposed MMI module gives a way to effectively inject motion extracted from video into the attention map of the prompt. We found that editing a video with the motion extracted from the video improves general editing performance and enables selective editing according to the direction in which the object moves.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<br>
+<br>
+
+  
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-to-image diffusion, which has been trained with a large amount of text-image pair dataset, shows remarkable performance in generating high-quality images. Recent research using diffusion model has been expanded for text-guided video editing tasks by using text-guided image diffusion models as baseline. Existing video editing studies have devised an implicit method of adding cross-frame attention to estimate frame-frame attention to attention maps, resulting in temporal consistent editing. However, because these methods use generative models trained on text-image pair data, they do not take into account one of the most important characteristics of video: motion. When editing a video with prompts, the attention map of the prompt implying the motion of the video, such as 'running' or 'moving', is not clearly estimated and accurate editing cannot be performed. In this paper, we propose the `Motion Map Injection' (MMI) module to perform accurate video editing by considering movement information explicitly. The MMI module provides a simple but effective way to convey video motion information to T2V models by performing three steps: 1) extracting motion map, 2) calculating the similarity between the motion map and the attention map of each prompt, and 3) injecting motion map into the attention maps. Considering experimental results, input video can be edited accurately and effectively with MMI module. To the best of our knowledge, our study is the first method that utilizes the motion in video for text-to-video editing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<br>
+<br>
+<br>
+<br>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Framework</h2>
+      </div>
+      <img class="center-img" src="static/images/fig100.jpg"/>
+      <h2 class="subtitle">
+        Comparison of video editing output and attention map compared to existing methods. Both Image-P2P and Video-P2P
+failed to accurately estimate the attention map, resulting in discrepancy with the prompt. Our framework performed realistic video
+editing by enabling accurate attention maps through optical flow guided attention maps. Following figure describes our proposed method.
+      </h2>
+    </div>
+  </div>
+</section>
+
+  
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <div class="columns is-centered has-text-centered">
+        <!--
+        <h2 class="title is-3">Framework</h2> -->
+      </div>
+      <img class="center-img" src="static/images/fig120.jpg" />
+      <h2 class="subtitle">
+        Overall framework of this study. Our framework is structured to complement the text-to-video model through the Motion Map Injection (MMI) module. Our proposed MMI Module consists of two steps for effective video editing. At the first step, pre-trained optical flow estimation network estimates optical flow of input video. At the second step, a motion map is obtained by applying L2 norm to the optical flow. By calculating the correlation between the attention map of all prompts and the motion map, it complements the existing attention map according to the correlation. Lastly inject the motion map into the attention map of motion prompt. After that, text-to-video editing is performed using the attention map that includes video motion information.
+      </h2>
+    </div>
+  </div>
+</section>
+  
+<br>
+<br>
+<br>
+<br>
+  
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Frames</h2>
+      </div>
+      <img class="center-img" src="static/images/f_cloud.png" width="100%" />
+      <br> 
+      <img class="center-img" src="static/images/f_boat.png" width="100%" />
+      <br> 
+      <img class="center-img" src="static/images/f_colorful.png" width="100%" />
+      <br>  
+      <img class="center-img" src="static/images/f_duck.png" width="100%" />
+      <br> 
+      <img class="center-img" src="static/images/f_lava.png" width="100%" />
+      <br> 
+      <img class="center-img" src="static/images/f_pink_train.png" width="100%" />
+      <br> 
+      <img class="center-img" src="static/images/f_red_car.png" width="100%" />
+      <br> 
+      <img class="center-img" src="static/images/f_windmill.png" width="100%" />
+      <br> 
+      <img class="center-img" src="static/images/f_smoke.png" width="100%" />
+      <br> 
+      <img class="center-img" src="static/images/f_beer.png" width="100%" />
+    </div>
+  </div>
+</section>
+
+  
+<br>
+<br>
+<br>
+<br>
+
+<!--프레임 추가한 블럭. 내용 변경 후 주석 해제하여 사용 가능
+<div style="border: 2px solid rgb(209, 206, 206); border-radius: 15px; padding: 10px;width:1100px; margin:auto;box-shadow: 1px 1px 2px 6px rgb(209, 206, 206)">
+    <br>
+    <h2><p style="font-size:1.3em;text-align:center; font-family: 'Times New Roman';font-weight: normal;">Our Contribution</p></h2>
+        <br>
+        <div style="border: 2px solid white; border-radius: 15px; width:1000px; margin:auto;height: 200;">
+          <h3><p style="color:black;font-size:0.9em; font-family: 'Times New Roman';font-weight: normal;">Our contribution is to create a framework that enables the generation of T2V content from various viewing points. In the context of T2V, there has been an issue where images do not appear properly without pose guidance. To address this problem, we have developed a framework that allows for the creation of T2V content from multiple viewing angles or perspectives. By incorporating a range of viewing points, our framework aims to enhance the overall quality and effectiveness of T2V technology.</p></h3>
+            <br><p id="Abstract"></p>
+        </div>
+</div>
+-->
+
+
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
