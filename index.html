@@ -319,13 +319,13 @@ editing by enabling accurate attention maps through optical flow guided attentio
       <!-- 잠시 주석 : alt="" 지움, 33%로 바꿈 / 텍스트도 넣어지나?
       <img class="center-img" src="static/images/ncc.png"/> -->
       <figure>
-        <figcaption>(a) SQDIFF (b) CCORR (c) CCOEFF </figcaption>
+        <figcaption>From the left, this is the result from applying cv2.TM_SQDIFF, cv2.TM_CCORR, and cv2.TM_CCOEFF as correlation calculating method. </figcaption>
         <img src="static/images/TM_SQDIFF.gif" width='33%'>
         <img src="static/images/TM_CCORR.gif" width='33%'>
         <img src="static/images/TM_CCOEFF.gif" width='33%'>
       </figure>
       <figure>
-        <figcaption>(d) SQDIFF_NORMED (e) CCORR_NORMED (f) CCOEFF_NORMED </figcaption>
+        <figcaption>From the left, this is the result from applying cv2.TM_SQDIFF_NORMED cv2.TM_CCORR_NORMED cv2.TM_CCOEFF_NORMED as correlation calculating method. </figcaption>
         <img src="static/images/TM_SQDIFF_NORMED.gif" width='33%'>
         <img src="static/images/TM_CCORR_NORMED.gif" width='33%'>
         <img src="static/images/clouds_waves_MMI.gif" width='33%'>
@@ -340,7 +340,7 @@ editing by enabling accurate attention maps through optical flow guided attentio
           <img src="static/images/TM_CCORR_NORMED.gif" width='33%'>
             <img src="static/images/clouds_waves_MMI.gif" width='33%'>-->
       <h2 class="subtitle">
-        (test17) Ablation study on which method for calculating correlation between attention maps and motion map makes video edited in best quality. We used CCOEFF_NORMED to calculate the correlation for realistic video editing.
+        Ablation study on which method for calculating correlation between attention maps and motion map makes video edited in best quality. We used CCOEFF_NORMED to calculate the correlation for realistic video editing.
       </h2>
     </div>
   </div>
