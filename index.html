@@ -317,13 +317,109 @@
         <h2 class="title is-3">Qualitative Results</h2>
         </div>
           <h2 class="subtitle">
-              We coducted extensive exprements on existing T2V models (vid2vid-zero, FateZero) including Video-P2P.
-              Followings are those expermental results.
+              First, we provide results for 8 frames and 24 frames. It is possible to use not only 8 frames, which are commonly used by most video editing models, but also up to 24 frames.
             </h2>
     </div>
   </div>
 
-    
+  <!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Video-P2P -->
+        <img class="center-img" src="static/labels/cvpr_label_video-p2p_8f.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/barabaque/inversion.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/barabaque/original.gif", width="33.3%">
+        <img class="center-img" src="static/videos/8frame/barabaque/video-p2p_ours.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/barabaque.png", width="100%">
+      </div>
+      <div class="item">
+        <!-- Video-P2P -->
+        <img class="center-img" src="static/labels/cvpr_label_video-p2p_8f.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/chimney/inversion.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/chimney/original.gif", width="33.3%">
+        <img class="center-img" src="static/videos/8frame/chimney/video-p2p_ours.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/bubble_chimney.png", width="100%">
+      </div>
+      <div class="item">
+        <!-- Video-P2P -->
+        <img class="center-img" src="static/labels/cvpr_label_video-p2p_8f.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/colud_tower/inversion.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/colud_tower/original.gif", width="33.3%">
+        <img class="center-img" src="static/videos/8frame/colud_tower/ours.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/cloud_waves.png", width="100%">
+      </div>
+      <div class="item">
+        <!-- Video-P2P -->
+        <img class="center-img" src="static/labels/cvpr_label_video-p2p_8f.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/water_bubble/inversion.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/water_bubble/original.gif", width="33.3%">
+        <img class="center-img" src="static/videos/8frame/water_bubble/ours.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/bubble_duck.png", width="100%">
+      </div>
+      <div class="item">
+        <!-- Video-P2P -->
+        <img class="center-img" src="static/labels/cvpr_label_video-p2p_8f.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/fire/inversion.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/fire/original.gif", width="33.3%">
+        <img class="center-img" src="static/videos/8frame/fire/ours.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/fire.png", width="100%">
+      </div>
+      <div class="item">
+        <!-- Video-P2P -->
+        <img class="center-img" src="static/labels/cvpr_label_video-p2p_8f.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/water_glass/inversion.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/water_glass/original.gif", width="33.3%">
+        <img class="center-img" src="static/videos/8frame/water_glass/ours.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/water_beer.png", width="100%">
+      </div>
+      <div class="item">
+        <!-- Video-P2P -->
+        <img class="center-img" src="static/labels/cvpr_label_video-p2p_8f.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/windmill/inversion.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/8frame/windmill/original.gif", width="33.3%">
+        <img class="center-img" src="static/videos/8frame/windmill/ours.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/pink_windmill.png", width="100%">
+
+    </div>
+  </div>
+</div>
+<br>
+<h2 class="subtitle has-text-centered">
+  <span style="color:#FF0000">Red words</span> indicate the prompt that Prompt-to-prompt editing is applied ('replace' or 'refine'), <br>
+  <span style="color:#00B0F0">Blue words</span> indicate the prompt that Attention Flow with Motion Map Injection module is applied.
+</h2>
+</div>
+</section>
+<!-- End image carousel -->
+
+  <!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Video-P2P -->
+        <img class="center-img" src="static/labels/cvpr_label_video-p2p_8f.png", width="100%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/24frame/inversion.gif", width="33.3%", style="padding-top: 2%;">
+        <img class="center-img" src="static/videos/24frame/original.gif", width="33.3%">
+        <img class="center-img" src="static/videos/24frame/video-p2p_ours.gif", width="33.3%">
+        <img class="center-img" src="static/prompt/balloon_smoke.png", width="100%">
+
+    </div>
+  </div>
+</div>
+<br>
+<h2 class="subtitle has-text-centered">
+  <span style="color:#FF0000">Red words</span> indicate the prompt that Prompt-to-prompt editing is applied ('replace' or 'refine'), <br>
+  <span style="color:#00B0F0">Blue words</span> indicate the prompt that Attention Flow with Motion Map Injection module is applied.
+</h2>
+</div>
+</section>
+<!-- End image carousel -->
+  
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body has-text-justified">
