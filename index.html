@@ -249,11 +249,15 @@
       <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Framework</h2>
       </div> -->
-      <img class="center-img" src="static/images/intro.jpg"/>
+      <img class="center-img" src="static/images/fig3.jpg"/>
       <h2 class="subtitle">
-        Comparison of video editing output and attention map compared to existing methods. Both Image-P2P and Video-P2P
-failed to accurately estimate the attention map, resulting in discrepancy with the prompt. Our framework performed realistic video
-editing by enabling accurate attention maps through optical flow guided attention maps. Following figure describes our proposed method.
+        The existing T2V-model failed to estimate an accurate attention map for the motion prompt {Floating}, which resulted in a decrease in editability. 
+        The proposed MMI module enables the enhancement of the attention map, allowing for the accurate estimation of attention maps. 
+        Through this, it becomes possible to enhance editability. 
+        (a) is a comparison figure illustrating the output of Video-P2P for the input video, as well as the output when the MMI module is applied to Video-P2P. 
+        The result was more realistic editing when the MMI module was applied. 
+        (b) briefly explains the method of enhancing the attention map by applying the proposed module to address the limitations that the existing T2V model cannot accurately generate. 
+        Following figure describes our proposed method.
       </h2>
     </div>
   </div>
