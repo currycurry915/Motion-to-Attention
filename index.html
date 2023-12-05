@@ -84,7 +84,7 @@
 
                     <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/920_supple.pdf" target="_blank"
+                      <a href="static/pdfs/8379_supple.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
@@ -214,13 +214,13 @@
         <h2 class="title is-3">Abstract</h2>
       </div>
       <h2 class="subtitle">
-        Text-guided video editing studies have recently increased due to the impressive performance of text-to-image diffusion models. 
-        Existing research on video editing has introduced an implicit method for estimating inter-frame attention from cross-frame attention, 
-        which produces videos that are temporally consistent. However, as these techniques rely on generative models trained on text-image pair data, 
-        they are unable to handle motion, which is a special feature of video. When a video is edited by manipulating prompts, 
-        the attention map of the prompt that implies the motion of the video (such as “running” or “moving”) is likely to be inaccurately estimated, 
-        which results in errors in video editing. In this article, we suggest the “Motion Map Injection” (MMI) module to carry out precise video editing 
-        by explicitly taking motion into account. The MMI module offers a basic but efficient way to provide text-to-video (T2V) model with the video motion information.
+        Recent text-guided video editing research attempts to expand from image to video based on the text-guided image editing model. 
+        To this end, most researches focus on achieving temporal consistency between frames as a primary challenge in text-guided video editing. 
+        However, despite their efforts, the editability is still limited when there is a prompt indicating motion, such as `flowing'. 
+        In our experiment, we found that this phenomenon was due to the inaccurate attention map of the motion prompt. 
+        In this paper, we suggest the Motion Map Injection (MMI) module to carry out precise video editing by explicitly taking motion into account. 
+        The proposed MMI module employs two methodologies, "Motion Swapping" and "Weighted Sum using Correlation Score", to enhance the attention map using motion information. 
+        Notably, our MMI module is effectively applied to the attention-based text-guided video editing models, providing enhanced editability.
       </h2>
     </div>
   </div>
