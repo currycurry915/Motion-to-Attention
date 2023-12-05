@@ -427,22 +427,14 @@
       <img class="center-img" src="static/images/ncc.png"/> -->
       <br>
       <figure>
-        <img src="static/images/TM_SQDIFF.gif" width='33%'>
-        <img src="static/images/TM_CCORR.gif" width='33%'>
-        <img src="static/images/TM_CCOEFF.gif" width='33%'>
-        <figcaption>From the left, the result from applying cv2.TM_SQDIFF, cv2.TM_CCORR, and cv2.TM_CCOEFF as correlation calculating method. </figcaption>
-      </figure>
-      <br>
-      <figure>
-        <img src="static/images/TM_SQDIFF_NORMED.gif" width='33%'>
-        <img src="static/images/TM_CCORR_NORMED.gif" width='33%'>
-        <img src="static/images/clouds_waves_MMI.gif" width='33%'>
-        <figcaption>From the left, the result from applying cv2.TM_SQDIFF_NORMED cv2.TM_CCORR_NORMED cv2.TM_CCOEFF_NORMED as correlation calculating method. </figcaption>
+        <img src="static/supple_template_4.jpg" width='33%'>
       </figure>
       <br>
 
       <h2 class="subtitle">
-        Ablation study on which method for calculating correlation between attention maps and motion map makes video edited in best quality. We used cv2.TM_CCOEFF_NORMED to calculate the correlation for realistic video editing.
+        In ablation study, correlation-based normalized methods (Normalized Cross Correlation, Normalized Cross Coefficient) outperform other metrics including Spectral angle Mapper. 
+        In some case, both the Structural Similarity Index and Mutual Information shows novel results that were not observed within other template matching methods. 
+        Through this results, it is important to choose the template matching metrics well.
       </h2>
     </div>
   </div>
