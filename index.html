@@ -405,8 +405,59 @@
     </div>
   </div>
 </section>
-  
 
+
+<!-- Your images go here -->
+<section class="hero is-small">  
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div img class="center-img" src="static/frame_prompt/video-p2p/black_balloon.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/video-p2p/black_boat.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/video-p2p/bubble_duck.png" width="100%"></div>
+      <div img class="center-img" src="static/frame_prompt/video-p2p/chimeney.png" width="100%"></div>
+      <div img class="center-img" src="static/frame_prompt/video-p2p/cloud.png" width="100%"></div>
+      <div img class="center-img" src="static/frame_prompt/video-p2p/fire_container.png" width="100%"></div>
+      <div img class="center-img" src="static/frame_prompt/video-p2p/lava.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/video-p2p/light_smoke.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/video-p2p/seed_bubble.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/video-p2p/spreading_water.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/fatezero/beer.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/fatezero/chimney.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/fatezero/fire.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/fatezero/lava.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/vid2vid-zero/beer.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/vid2vid-zero/cloud.png" width="100%" ></div>
+      <div img class="center-img" src="static/frame_prompt/vid2vid-zero/windmill.png" width="100%" ></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If you need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</section>
+  
   <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
@@ -415,70 +466,6 @@
        <div class="item">
          <img class="center-img" src="static/frame_prompt/video-p2p/black_balloon.png" width="100%" />
         </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/video-p2p/black_boat.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/video-p2p/bubble_duck.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/video-p2p/chimeney.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/video-p2p/cloud.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/video-p2p/fire_container.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/video-p2p/lava.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/video-p2p/light_smoke.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/video-p2p/seed_bubble.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/video-p2p/spreading_water.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/fatezero/beer.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/fatezero/chimney.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/fatezero/fire.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/fatezero/lava.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/vid2vid-zero/beer.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/vid2vid-zero/cloud.png" width="100%" />
-          </div>
-        <div class="item">
-           <!-- Video-P2P -->
-           <img class="center-img" src="static/frame_prompt/vid2vid-zero/windmill.png" width="100%" />
-          </div>
       </div>
     </div>
   </div>
