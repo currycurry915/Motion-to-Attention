@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Motion-to-Attention: Attention Motion Composer using Optical Flow for Text-to-Video Editing</title>
+  <title>Motion-to-Attention: Enhancing Attention Maps to Improve Performance of Text-Guided Video Editing Models</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -54,20 +54,15 @@
           <h1 class="title is-1 publication-title">Motion-to-Attention: Attention Motion Composer using Optical Flow for Text-to-Video Editing</h1>
           <div class="is-size-5 publication-authors">
             <!-- Paper authors -->
-            <span class="author-block">
-              <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Seong-Hun Jeong</a><sup>*</sup>,</span>
-            <span class="author-block">
-              <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Inhwan Jin</a><sup>*</sup>,</span>
-            <span class="author-block">
-              <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Haesoo Choo</a><sup>*</sup>,</span>
-            <span class="author-block">
-              <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Hyeonjun Na<sup>*</sup></a>,</span>
-            <span class="author-block">
-              <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Kyeongbo Kong</a><sup>†</sup></span>
+            <span class="author-block">Seong-Hun Jeong<sup>*</sup>,</span>
+            <span class="author-block">Inhwan Jin<sup>*</sup>,</span>
+            <span class="author-block">Haesoo Choo<sup>*</sup>,</span>
+            <span class="author-block">Hyeonjun Na<sup>*</sup>,</span>
+            <span class="author-block">Kyeongbo Kong<sup>†</sup></span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Institution Name<br>Conference name and year</span>
+            <span class="author-block">Pusan National University, Pukyong National University</span>
             <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
             <span class="eql-cntrb"><small><br><sup>†</sup>Corresponding Author</small></span>
           </div>
@@ -215,12 +210,15 @@
       </div>
       <h2 class="subtitle">
         Recent text-guided video editing research attempts to expand from image to video based on the text-guided image editing model. 
-        To this end, most researches focus on achieving temporal consistency between frames as a primary challenge in text-guided video editing. 
-        However, despite their efforts, the editability is still limited when there is a prompt indicating motion, such as `flowing'. 
+        To this end, most research focuses on achieving temporal consistency between frames as a primary challenge in text-guided video editing. 
+        However, despite their efforts, the editability is still limited when there is a prompt indicating motion, such as ``floating". 
         In our experiment, we found that this phenomenon was due to the inaccurate attention map of the motion prompt. 
-        In this paper, we suggest the Motion Map Injection (MMI) module to carry out precise video editing by explicitly taking motion into account. 
-        The proposed MMI module employs two methodologies, "Motion Swapping" and "Weighted Sum using Correlation Score", to enhance the attention map using motion information. 
-        Notably, our MMI module is effectively applied to the attention-based text-guided video editing models, providing enhanced editability.
+        In this paper, we suggest the Motion-to-Attention (M2A) module to perform precise video editing by explicitly taking motion into account. 
+        First, we convert the optical flow extracted from the video into a motion map. 
+        During conversion, users can selectively apply direction information to extract the motion map. 
+        The proposed M2A module uses two methods: ``Attention-Motion Swap", which directly replaces the motion map with the attention map, 
+        and ``Attention-Motion Fusion", which uses the association between the motion map and the attention map, measured by a Fusion metric, as a weight to enhance the attention map using the motion map. 
+        The Text-to-Video editing model with the proposed M2A module showed better quantitative and qualitative results compared to the existing model. 
       </h2>
     </div>
   </div>
@@ -251,13 +249,10 @@
       </div> -->
       <img class="center-img" src="static/images/CVPR_fig_3.png"/>
       <h2 class="subtitle">
-        The existing T2V-model failed to estimate an accurate attention map for the motion prompt {Floating}, which resulted in a decrease in editability. 
-        The proposed MMI module enables the enhancement of the attention map, allowing for the accurate estimation of attention maps. 
-        Through this, it becomes possible to enhance editability. 
-        (a) is a comparison figure illustrating the output of Video-P2P for the input video, as well as the output when the MMI module is applied to Video-P2P. 
-        The result was more realistic editing when the MMI module was applied. 
-        (b) briefly explains the method of enhancing the attention map by applying the proposed module to address the limitations that the existing T2V model cannot accurately generate. 
-        Following figure describes our proposed method.
+        The existing T2V model failed to estimate an accurate attention map for the motion prompt \{Floating\}, which resulted in a decrease in editability, as shown in the top row of (b). 
+        (a) is a figure comparing the editability of Video-P2P and adding the proposed module to Video-P2P for input video. 
+        The proposed module improves the editability of existing video editing models through accurate estimation of attention maps. 
+        (b) briefly explains the method of enhancing the attention map by applying the proposed Motion-to-Attention module to address the limitations that the existing T2V model cannot accurately generate.
       </h2>
     </div>
   </div>
@@ -529,9 +524,6 @@
         We used <a href="https://video-p2p.github.io/">Video-P2P: Video Editing with Cross-attention Control</a> model as base-model which is based on Text-to-Image diffusion.
         And we expanded experments to show that our module is generally suitable for other T2V models, 
         <a href="https://github.com/baaivision/vid2vid-zero">vid2vid</a> and <a href="https://fate-zero-edit.github.io/">FateZero</a>.
-        <br> 
-        <br> 
-        Our another paper on this subject, <b>'Enhancing Text-to-Video Editing with Motion Map Injection'</b> (not published) has been selected for <b>oral presentation in ICCV workshop (CVEU 2023)!</b>
       </h2>
     </div>
   </div>
@@ -549,9 +541,9 @@
         <h2 class="title is-3">BibTex</h2>
       </div>
       <h2 class="subtitle">
-        @article{2023attentionflow,<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;title={AttentionFlow: Text-to-Video Editing Using Motion Map Injection Module},<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;year={2023}<br>
+        @article{2024Motiontoattention,<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;title={Motion-to-Attention: Enhancing Attention Maps to Improve Performance of Text-Guided Video Editing Models},<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;year={2024}<br>
           }
       </h2>
     </div>
