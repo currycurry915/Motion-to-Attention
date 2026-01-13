@@ -68,7 +68,7 @@
           </div>
 
           <div class="column has-text-centered">
-            <div class="publication-links">
+            <div class="publication-links" style="margin-bottom: 0;">
               <!-- Arxiv PDF link -->
               <span class="link-block">
                 <a href="static/pdfs/IEEE_TCSVT_Attention.pdf" target="_blank"
@@ -187,7 +187,6 @@
     </div>
   </div>
 </div>
-<br>
 <h2 class="subtitle has-text-centered">
   <span style="color:#FF0000">Red words</span> indicate the prompt that Prompt-to-prompt editing is applied ('replace' or 'refine'), <br>
   <span style="color:#00B0F0">Blue words</span> indicate the prompt that Attention Flow with Motion Map Injection module is applied.
@@ -197,8 +196,13 @@
 <!-- End image carousel -->
 
 <br>
-<br>  
-<br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
 <br>
 
 <!--    Abstract    -->  
@@ -223,6 +227,16 @@
     </div>
   </div>
 </section>
+
+<br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
+<br>
   
 <!--    Our Contribution    -->  
 <section class="hero teaser">
@@ -258,6 +272,13 @@
 </section>  
   
 <br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
 <br>
 
   
@@ -284,18 +305,41 @@
 </section>
   
 <br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
 <br>
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body has-text-justified">
+      
       <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Qualitative Results</h2>
-        </div>
-          <h2 class="subtitle">
-              First, we provide results for 8 frames and 24 frames. It is possible to use not only 8 frames, which are commonly used by most video editing models, but also up to 24 frames.
-            </h2>
+      </div>
+
+      <h2 class="subtitle">
+        First, we provide results for 8 frames and 24 frames. It is possible to use not only 8 frames, which are commonly used by most video editing models, but also up to 24 frames.
+      </h2>
+
     </div>
   </div>
+</section>
+
+
+
+<!-- 🔹 Subsection title -->
+<section class="hero is-small">
+  <div class="hero-body" style="padding-top: -0.5; padding-bottom: 0rem;">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-4">8-Frame Results</h3>
+    </div>
+  </div>
+</section>
+
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -364,9 +408,39 @@
 </section>
 <!-- End image carousel -->
 
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 1px solid #b5b5b5;
+    margin: 0.5rem 0;
+  ">
+</div>
+
+<!-- 🔹 Subsection title -->
+<section class="hero is-small">
+  <div class="hero-body" style="padding-top: -0.5; padding-bottom: 0rem;">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-4">24-Frame Results</h3>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-justified" style="padding-bottom: 0;">
+      <div class="columns is-centered has-text-centered">
+      </div>
+        <h2 class="subtitle">
+          We coducted extensive exprements on existing T2V models (vid2vid-zero, FateZero) including Video-P2P.
+          Followings are those expermental results.
+        </h2>
+    </div>
+  </div>
+</section>
+
 <!-- Image carousel (24-frame) -->
 <section class="hero is-small">
-  <div class="hero-body">
+  <div class="hero-body" style="padding-top: 0;">
     <div class="container is-max-desktop">
 
       <div id="results-carousel-2" class="carousel results-carousel">
@@ -401,75 +475,109 @@
 </section>
 <!-- End image carousel -->
 
-  
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 1px solid #b5b5b5;
+    margin: 0.5rem 0;
+  ">
+</div>
+
+<!-- 🔹 Subsection title -->
+<section class="hero is-small">
+  <div class="hero-body" style="padding-top: -0.5; padding-bottom: 0rem;">
+    <div class="container is-max-desktop has-text-centered">
+      <h3 class="title is-4">Frame-wise Results</h3>
+    </div>
+  </div>
+</section>
+
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body has-text-justified">
+    <div class="hero-body has-text-justified" style="padding-bottom: 0;">
       <div class="columns is-centered has-text-centered">
       </div>
         <h2 class="subtitle">
-          We coducted extensive exprements on existing T2V models (vid2vid-zero, FateZero) including Video-P2P.
-          Followings are those expermental results.
+          Furthermore, we visualize, on a frame-by-frame basis, the motion maps utilized by the M2A module, 
+          as well as the editing results before and after applying M2A, across multiple examples.
         </h2>
     </div>
   </div>
 </section>
 
+
 <section class="hero is-small">
-  <div class="hero-body">
+  <div class="hero-body" style="padding-top: 0;">
     <div class="container is-max-desktop">
       <!-- <div id="results-carousel" class="carousel results-carousel"> -->
         <div class="carousel results-carousel">
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/black_balloon.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/video-p2p/chimeney.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/black_boat.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/video-p2p/black_boat.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/bubble_duck.png" width="100%">
+          <img class="center-img" src="static/frame_prompt/video-p2p/bubble_duck.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/chimeney.png" width="100%">
+          <img class="center-img" src="static/frame_prompt/video-p2p/black_balloon.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/cloud.png" width="100%">
+          <img class="center-img" src="static/frame_prompt/video-p2p/cloud.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/fire_container.png" width="100%">
+          <img class="center-img" src="static/frame_prompt/video-p2p/fire_container.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/lava.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/video-p2p/lava.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/light_smoke.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/video-p2p/light_smoke.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/seed_bubble.png" width="100%">
+          <img class="center-img" src="static/frame_prompt/video-p2p/seed_bubble.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/video-p2p/spreading_water.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/video-p2p/spreading_water.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/fatezero/beer.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/fatezero/beer.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/fatezero/chimney.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/fatezero/chimney.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/fatezero/fire.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/fatezero/fire.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/fatezero/lava.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/fatezero/lava.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/vid2vid-zero/beer.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/vid2vid-zero/beer.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/vid2vid-zero/cloud.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/vid2vid-zero/cloud.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
        <div class="item">
-          <img class="center-img" src="static/frame_prompt/vid2vid-zero/windmill.png" width="100%" >
+          <img class="center-img" src="static/frame_prompt/vid2vid-zero/windmill.png" 
+          style="display: block; margin: 0 auto; width: 70%;">
          </div>
       </div>
     </div>
@@ -479,8 +587,13 @@
 
 
 <br>
-<br>
-<br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
 <br>
   
 
@@ -491,31 +604,46 @@
       <div class="columns is-centered has-text-centered">
         <h2 class="title is-3">Direction Control</h2>
       </div>
-      <img class="center-img" src="static/images/f_pink_train.png"/>
+
       <h2 class="subtitle">
         Since optical flow has the information on direction of pixel movement, as well as magnitude, 
         our model can be applied to allow the user to edit contents in a specific direction by rotating the optical flow 
         according to the direction provided by the user before injecting it.
       </h2>
+      <img
+        src="static/images/f_pink_train.png"
+        style="display: block; margin: 0 auto; width: 90%;"
+      >
+      
     </div>
   </div>
 </section>  
 
 <br>
-<br>
-<br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
 <br>
 
 
 <!-- Complex Video Results -->
 <section class="hero is-small">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container is-max-desktop has-text-centered">
 
-      <!-- Title -->
-      <h2 class="title is-3 has-text-centered">
-        Editing Complex Videos with Multiple Motions
+      <!-- Section title -->
+      <h2 class="title is-3" style="margin-bottom: 1.75rem;">
+        Editing Results on Complex Videos
       </h2>
+
+      <h3 class="title is-4" style="margin-bottom: 0rem;">
+        Qualitative Results on<br>
+        Multi-Object, Multi-Motion Video Editing
+      </h3>
 
       <!-- Image Carousel -->
       <div class="carousel results-carousel">
@@ -533,22 +661,6 @@
 
           <img class="center-img"
                src="static/0104/caption/two_car.png"
-               width="100%">
-        </div>
-
-        <!-- Example 2 -->
-        <div class="item">
-          <img class="center-img"
-               src="static/0104/labels/videop2p.png"
-               width="100%"
-               style="padding-top: 2%;">
-
-          <img class="center-img"
-               src="static/0104/concat/bear_comparison.gif"
-               width="100%">
-
-          <img class="center-img"
-               src="static/0104/caption/dog.png"
                width="100%">
         </div>
 
@@ -570,12 +682,62 @@
       </div>
 
       <!-- Description (moved below carousel) -->
-      <p class="subtitle has-text-centered" style="margin-top: 1.5rem;">
-        We evaluate video editing performance on complex videos containing multiple objects,
-        diverse motion patterns, and camera motion.
-        Existing text-guided video editing methods often fail to localize and preserve motion
-        under such challenging conditions, whereas our method consistently produces coherent
-        and accurate editing results.
+      <p class="subtitle" style="margin-top: 0rem; text-align: left;">
+        We evaluate video editing performance on complex videos containing multiple objects and diverse motion patterns. 
+        Existing text-guided video editing methods often fail to accurately localize 
+        and preserve object motions under such challenging conditions, 
+        whereas our method consistently produces coherent and accurate editing results.
+      </p>
+<!-- 
+    </div>
+  </div>
+</section> -->
+<!-- End Complex Video Carousel -->
+      <br>
+      <div class="container is-max-desktop">
+        <hr style="
+          border: none;
+          border-top: 1px solid #b5b5b5;
+          margin: 0.5rem 0;
+        ">
+      </div>
+      <br>
+<!-- Complex Video Results -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop"> -->
+
+      <!-- Title -->
+        <h3 class="title is-4" style="margin-bottom: 0rem;">
+          Qualitative Results on<br>
+          Videos with Camera Motion
+        </h3>
+
+      <!-- Image Carousel -->
+      <div class="carousel results-carousel">
+
+        <!-- Example 2 -->
+        <div class="item">
+          <img class="center-img"
+               src="static/0104/labels/videop2p.png"
+               width="100%"
+               style="padding-top: 2%;">
+
+          <img class="center-img"
+               src="static/0104/concat/bear_comparison.gif"
+               width="100%">
+
+          <img class="center-img"
+               src="static/0104/caption/dog.png"
+               width="100%">
+        </div>
+      </div>
+
+      <!-- Description (moved below carousel) -->
+      <p class="subtitle" style="margin-top: 0rem; text-align: left;">
+        Furthermore, we conduct additional experiments on videos that include camera motion in addition to multiple objects and 
+        multiple motion patterns. Despite the increased complexity introduced by camera motion, 
+        our method continues to deliver high-quality and stable editing results.
       </p>
 
     </div>
@@ -583,11 +745,70 @@
 </section>
 <!-- End Complex Video Carousel -->
 
+<br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 1px solid #b5b5b5;
+    margin: 0.5rem 0;
+  ">
+</div>
+<br>
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+
+      <h3 class="title is-3" style="margin-bottom: 0rem;">
+        Video Captioning–Based Prompts
+      </h3>
+
+      <!-- Image Carousel -->
+      <div class="carousel results-carousel">
+
+        <!-- Example 1 -->
+        <div class="item">
+          <img class="center-img"
+               src="static/0113/title.png"
+               width="100%"
+               style="padding-top: 2%;">
+
+          <img class="center-img"
+               src="static/0113/compare_caption.gif"
+               width="100%">
+
+          <img class="center-img"
+               src="static/0113/captions.png"
+               style="display: block; width: 70%; margin-left: 0; margin-right: auto;">
+        </div>
+      </div>
+
+      <!-- Description (moved below carousel) -->
+      <p class="subtitle" style="margin-top: 0rem; text-align: left;">
+        To reflect realistic scenarios where no user-provided prompt is available for the input video, 
+        we evaluate our method using automatically generated prompts obtained from a video captioning model. 
+        When applying M2A, we observe that the editing results produced using user-written prompts and 
+        those generated by the video captioning model are both accurate and reliable, 
+        demonstrating the robustness of our approach.
+      </p>
+
+      <p class="subtitle"
+        style="margin-top: 0rem; text-align: left; font-size: 0.9rem;">
+        * Zhang, Boqiang, et al. "Videollama 3: Frontier multimodal foundation models for image and video understanding."
+        arXiv preprint arXiv:2501.13106 (2025).
+      </p>
+    </div>
+  </div>
+</section>
 
 <br>
-<br>
-<br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
 <br>
 
 <!--    Ablation Study    -->
@@ -614,8 +835,13 @@
 
 
 <br>
-<br>
-<br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
 <br>
 
 <!--    Followup Works    -->  
@@ -634,8 +860,15 @@
   </div>
 </section>
 
-<br> 
-<br> 
+<br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
+<br>
 
 
 <!--    BibTex    -->  
@@ -654,6 +887,16 @@
     </div>
   </div>
 </section>
+
+<br>
+<div class="container is-max-desktop">
+  <hr style="
+    border: none;
+    border-top: 2px solid #363636;
+    margin: 0.75rem 0;
+  ">
+</div>
+<br>
 
 
   </body>
