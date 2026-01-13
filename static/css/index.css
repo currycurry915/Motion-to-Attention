@@ -133,3 +133,11 @@ body {
   font-size: smaller;
 }
 
+.hero.teaser .hero-body {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.hero.teaser .subtitle {
+  margin-top: 0.5rem;
+}
