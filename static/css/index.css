@@ -141,3 +141,9 @@ body {
 .hero.teaser .subtitle {
   margin-top: 0.5rem;
 }
+
+/* single-item carousel: navigation arrow 제거 */
+.no-arrow-carousel .slider-navigation-previous,
+.no-arrow-carousel .slider-navigation-next {
+  display: none !important;
+}
